@@ -22,6 +22,6 @@
   - list of actors
   - plot
   - add DELETE button
-  - link to movie page
+  - link to home page
 
 4. back it up to JSON file
