@@ -5,7 +5,7 @@
   - index page loops through users movie collection
 
 2. user must be able to search through database
-  - must be able to add a movie throught the database
+  - must be able to add a movie through the database
     - title
     - year
     - poster 
