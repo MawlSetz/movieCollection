@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<title>Movie Collection</title>
+</head>
+<body>
+	<h1><%= film.Title %></h1>
+	<p><%= film.Year %><br>
+	<%= film.Rated %><br>
+	<%= film.Director %><br>
+	<%= film.Actors %><br>
+	<%= film.Plot %>
+	</p>
+	<form action="/movie/<%= movieID.id %>?_method=DELETE" method="POST">
+	<button>Delete from movies</button>
+	</form>
+	<a href="/home">Go home</a>
+</body>
+</html>

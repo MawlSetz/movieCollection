@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<title>Movie Collection</title>
+</head>
+<body>
+	<h1>Movie Collection</h1>
+	<form value="search" method="GET" action="/results">
+		<input type="text" name="title" placeholder="search" required>
+		<button>Search</button>
+	</form>
+	<ul>
+	<% movies.forEach(function(movie) {
+		if (movie != null) {
+		%><li><a href="/home/<%= movie.id %>"><%= movie.title %></a></li><%
+	}});%>
+	</ul>
+</body>
+</html>

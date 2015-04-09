@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>Movie Collection</title>
+</head>
+<body>
+	<h1>Movie Collection</h1>
+	<table>
+	<% results.forEach(function(result) {
+		%><tr>
+		<form method="POST" action="/home" value="add">
+		<td><%= result.Title %></td>
+		<td><%= result.Year %></td>
+		<td><img src="<%= result.Poster %>"></td>
+		<td>Select username:<select>
+		<% users.forEach(function(user) { %>
+		<option name="username" value="<%= user.id %>"><%= user.name %></option>
+		<% }); %>
+		</select>
+		</td>
+		<td><button value="<%= JSON.stringify(result) %>" name="imdb">Add to your movies</button>
+		</td></form>
+		</tr><%
+	});%>
+	</table>
+	<a href="/">Go home</a>
+</body>
+</html>

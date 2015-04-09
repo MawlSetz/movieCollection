@@ -1,0 +1,19 @@
+{
+  "name": "movieCollection",
+  "version": "1.0.0",
+  "description": "# Spec 1. user must be able to see a collection of their films   - index page loops through users movie collection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MawlSetz/movieCollection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MawlSetz/movieCollection/issues"
+  },
+  "homepage": "https://github.com/MawlSetz/movieCollection"
+}
